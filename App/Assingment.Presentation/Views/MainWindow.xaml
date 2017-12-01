@@ -28,11 +28,7 @@
               SelectionMode="Single"
               SelectedIndex="{Binding SelectedIndex, UpdateSourceTrigger=PropertyChanged}"
               >
-        <ie:Interaction.Triggers>
-            <ie:EventTrigger EventName="SelectionChanged">
-                <ie:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}, Mode=FindAncestor}, Path=DataContext.ChangeSelection}"/>
-            </ie:EventTrigger>
-        </ie:Interaction.Triggers>
+        
         <DataGrid.Columns>
             <DataGridTextColumn Header="Име" 
                             Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
