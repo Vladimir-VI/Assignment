@@ -10,7 +10,7 @@ using AutoMapper.QueryableExtensions;
 
 namespace Assingment.Presentation.ViewModels
 {
-    public class MainViewModel : INotifyPropertyChanged
+    public class MainViewModel : INotifyPropertyChanged, IMainViewModel
     {
         private ILoadService _loadService;
         private IUpdateService _saveService;

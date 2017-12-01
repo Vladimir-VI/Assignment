@@ -7,7 +7,6 @@ namespace Assignment.Models
 {
     public class Event : IHasID
     {
-        private string name;
         [Key]
         public int Id { get; set; }
 

@@ -87,6 +87,7 @@
     <Compile Include="Converters\EnumToStringConverter.cs" />
     <Compile Include="DomainModels\EventDomainModel.cs" />
     <Compile Include="Validation\StringLengthValidationRule.cs" />
+    <Compile Include="ViewModels\IMainViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -124,8 +125,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Data\Assignment.Data\Assignment.Data.csproj">
-      <Project>{c6daef58-94fd-4e6a-8a55-56fc795b8412}</Project>
+    <ProjectReference Include="..\..\Data\Assignment.Data\Assignment.Data.csproj">
+      <Project>{C6DAEF58-94FD-4E6A-8A55-56FC795B8412}</Project>
       <Name>Assignment.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Data\Assignment.Models\Assignment.Models.csproj">

@@ -1,11 +1,12 @@
 ﻿using Ninject;
 using System.Windows;
-using Assignment.Data;
 using Assingment.Presentation.Views;
 using Assignment.Services;
 using AutoMapper;
 using Assingment.Presentation.DomainModels;
 using Assignment.Models;
+using Assignment.Data;
+using Assingment.Presentation.ViewModels;
 
 namespace Assingment.Presentation
 {
@@ -23,6 +24,7 @@ namespace Assingment.Presentation
 
         private void InintializeNinject()
         {
+            _kernel.Bind<IMainViewModel>().To<MainViewModel>();
             _kernel.Bind<IAssignmentContext>().To<Assignment.Data.AssignmentContext>();
             _kernel.Bind<ILoadService>().To<LoadService>();
             _kernel.Bind<IUpdateService>().To<UpdateService>();
