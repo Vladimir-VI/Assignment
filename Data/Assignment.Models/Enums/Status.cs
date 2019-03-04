@@ -7,6 +7,7 @@ namespace Assignment.Models.Enums
         [Display(Name ="Неактивен")]
         Inactive,
         [Display(Name = "Активен")]
-        Active
+        Active,
+        AnotherStatus
     }
 }
